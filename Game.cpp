@@ -15,7 +15,7 @@ void initializeGame()
 {
 	ClearLog();
 
-	ModkitArray_Size = (uint32_t)GetPrivateProfileIntA("MODKIT_SETTINGS", "MODKITARRAY_SIZE", 2048, ".\\ModkitLimitAdjusterEnhanced.ini");
+	ModkitArray_Size = (uint32_t)GetPrivateProfileIntA("MODKIT_SETTINGS", "MODKITARRAY_SIZE", 65536, ".\\ModkitLimitAdjusterEnhanced.ini");
 	g_isEnhanced = [] {
 		char path[MAX_PATH];
 		GetModuleFileNameA(GetModuleHandleA(nullptr), path, MAX_PATH);
